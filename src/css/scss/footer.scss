@@ -1,1 +1,63 @@
-.footer{}
+@import 'variables';
+.footer{
+    background-color:$blue;
+    font-weight:600;
+    font-size:10px;
+    padding:50px 0;
+    @media only screen and (max-width:768px){
+        padding:25px 0;
+    }
+    .row{
+        margin:0 0 25px 0;
+        &.row-2{
+            align-items:center;
+            justify-content:space-between;
+        }
+        &:last-of-type{
+            margin:0;
+        }
+        .col{
+            width:100%;
+            &.col-4{
+                text-align:right;
+            }
+            .title{
+                color:$white;
+                display:block;
+                margin:0 0 5px 0;
+                text-transform:uppercase;
+            }
+            .info{
+                a{
+                    border-bottom:1px solid;
+                    transition:$transition;
+                    &:hover{
+                        color:$white;
+                    }
+                }
+            }
+        }
+        .list-menu-footer{
+            .item{
+                display:flex;
+                a{
+                    color:$green;
+                    line-height:1.5;
+                    transition:$transition;
+                    &:hover{
+                        color:$white;
+                    }
+                }
+            }
+        }
+        .logo-footer{
+            &.logo-1{
+                margin-right:auto;
+            }
+            img{
+                width:auto;
+                max-height:40px;
+            }
+        }
+    }
+}

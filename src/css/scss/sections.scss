@@ -1,0 +1,128 @@
+@import 'variables';
+.section-fullbanner{
+    margin:0 0 -8% 0;
+    position:relative;
+    z-index:-1;
+}
+.section-what-is{
+    background-color:$blue;
+    margin:-80px 0;
+    @media only screen and (max-width:768px){
+        margin:-40px 0;
+    }
+    @media only screen and (max-width:425px){
+        margin:0;
+    }
+    .title{
+        margin:0 0 25px 0;
+        @media only screen and (max-width:425px){
+            margin:0 0 15px 0;
+        }
+    }
+}
+.section-legislation{
+    background-color:$white;
+    color:$green;
+    padding:0 0 50px 0;
+    @media only screen and (max-width:768px){
+        padding:25px 0;
+    }
+    .title{
+        margin:0 0 25px 0;
+        @media only screen and (max-width:425px){
+            margin:0 0 15px 0;
+        }
+    }
+}
+.wave{
+    position:relative;
+    z-index:-1;
+    &.wave-1{
+        margin:0 0 -1px 0;
+        svg{
+            fill:$blue;
+        }
+    }
+    &.wave-2{
+        margin:-2px 0 0 0;
+        transform:rotate(180deg);
+        svg{
+            fill:$blue;
+        }
+    }
+    &.wave-3{
+        margin:0 0 -8% 0;
+        svg{
+            fill:$green;
+        }
+    }
+}
+.section-contact-us{
+    background-color:$green;
+    color:$blue;
+    padding:0 0 50px 0;
+    @media only screen and (max-width:768px){
+        padding:0 0 25px 0;
+    }
+    @media only screen and (max-width:425px){
+        padding:25px 0;
+    }
+    .title{
+        margin:0 0 25px 0;
+        @media only screen and (max-width:425px){
+            margin:0 0 15px 0;
+        }
+    }
+    .description{
+        margin:0 0 25px 0;
+        @media only screen and (max-width:425px){
+            margin:0 0 15px 0;
+        }
+    }
+    .form{
+        .wrapper{
+            align-items:center;
+            display:flex;
+            margin:0 0 10px 0;
+            @media only screen and (max-width:425px){
+                align-items:flex-start;
+                flex-direction:column;
+            }
+            &:last-of-type{
+                margin:0;
+            }
+            &.textarea{
+                align-items:flex-start;
+                flex-direction:column;
+                .label{
+                    margin:0 0 10px 0;
+                    min-width:100%;
+                }
+            }
+            &.button{
+                justify-content:flex-end;
+            }
+            .label{
+                line-height:25px;
+                min-width: 60px;
+                @media only screen and (max-width:425px){
+                    width:100%;
+                }
+            }
+            .input{
+                border-color:$blue;
+            }
+            .textarea{
+                background-color:lighten($green,35%);
+                border-color:$blue;
+                height:190px;
+            }
+            .bt{
+                &:hover{
+                    background-color:transparent;
+                    border-color:$white;
+                }
+            }
+        }
+    }
+}
