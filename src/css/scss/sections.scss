@@ -1,11 +1,28 @@
 @import 'variables';
 .section-fullbanner{
+    background-color:lighten($blue,5%);
+    color:$white;
     margin:0 0 -8% 0;
+    padding:100px 0 200px 0;
     position:relative;
     z-index:-1;
-    .image{
-        img{
-            width:100%;
+    @media only screen and (max-width:425px){
+        padding:50px 0 100px 0;
+    }
+    .content{
+        .title{
+            margin:0 0 100px 0;
+            @media only screen and (max-width:425px){
+                margin:0 0 50px 0;
+            }
+        }
+        .images{
+            align-items:flex-end;
+            display:flex;
+            justify-content:space-evenly;
+            .image{
+                margin:0 15px;
+            }
         }
     }
 }
